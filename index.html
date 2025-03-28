@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humber's 1st Film Festival</title>
+    <style>
+        /* Importing custom font */
+        @font-face {
+            font-family: "Agency FB";
+            src: url("assets/fonts/AgencyFB-Bold.ttf") format("truetype");
+            font-weight: bold;
+        }
+        /* Global reset for consistent styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Basic page layout */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+        }
+        /* Header styling */
+        .header {
+            text-align: center;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Section styling for consistent layout */
+        .hero, .about, .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1; 
+            overflow: auto;
+        }
+        /* Ensuring images scale properly */
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* Image container for positioning text over images */
+        .image-container{
+            height: 100%;
+            position:relative;
+            width: 100vw;
+        }
+        /* Styling for heading elements inside image containers */
+        .image-container h1, .image-container h2 {
+            font-family: "Agency FB", sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        /* Paragraph text styling with proper line spacing */
+        .image-container p 
+        {
+            font-family: "arial";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-48%, -31%);
+            font-size: 1.32vw;
+            color: #023148;
+            text-align: left;
+            width: 81vw;
+            line-height: 1.5; /* Adjust this value to increase/decrease line spacing */
+        }
+        .image-container a {
+            font-family: "arial";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-252%, 200%);
+            font-weight: bold;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18vw;
+            height: 4vw;
+            background-color: #fff2d2;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: #1f9cbd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with site logo -->
+        <header class="header">
+            <img src="assets/images/logo.jpg" alt="Current Cut Film Festival Logo">
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="image-container">
+                <img src="assets/images/1.jpg" alt="HUMBER'S 1ST FILM FESTIVAL IS HERE" aria-hidden="true">
+                <h1 id="hero-heading" style="transform: translate(-90.5%, -65%); font-size: 4vw; font-weight: bold; color: #fff2d2; text-align: left;">HUMBER'S 1ST FILM FESTIVAL IS HERE</h1>
+                <a href="http://www.filmfreeway.com/CurrentCutFilmFestival">Submit your Film</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="image-container">
+                <img src="assets/images/2.jpg" alt="About Current Cut Film Fest">
+                <h2 style="transform:translate(14%, 45%); font-size: 5.05vw; top: 0%; left: 0%; font-weight: bold; color: #fa8504; text-align: left;">ABOUT CURRENT CUT FILM FEST</h2>
+                <p>
+                    Current Cut Film Festival is an opportunity for students to take centre stage, showcasing their
+                    bold and visionary work. We invite you to pull up a Muskoka chair and experience firsthand the
+                    passion and creativity of tomorrow’s filmmakers. This festival is for those who defy expectations,
+                    challenge the norm, and venture into uncharted creative waters. It’s a celebration of the daring
+                    storytellers. The filmmakers who don’t just ride the waves of cinema but carve new currents.
+                    Like the lake that borders our campus, each film screened at CCFF brings something fresh,
+                    original, and thought-provoking to the world. Be among the first to witness this rising talent, all
+                    while soaking in the breathtaking lakeside setting and the inspiring atmosphere of Humber
+                    Polytechnic’s Lakeshore campus. At Current Cut Film Festival, you’re not just an observer.
+                    You’re part of something extraordinary.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Event Info Section -->
+        <div class="info">
+            <div class="image-container">
+                    <img src="assets/images/3.jpg" alt="Mark your calendar 
+                        June 12 2025 Current Cut Film Festival Red Carpet and Reception G Commons at Humber Lakeshore Campus 17 Colonel Samuel Smith Park Drive 
+                        June 13 2025 Current Cut Film Festival Full Day of Programming Humber Cultral Hub Recital Hall 3199 Lakeshore Boulevard West">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
